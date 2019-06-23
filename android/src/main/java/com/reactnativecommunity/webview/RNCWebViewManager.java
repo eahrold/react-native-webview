@@ -11,7 +11,7 @@ import android.net.http.SslError;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
-import androidx.annotation.RequiresApi;
+import android.support.annotation.RequiresApi;
 import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.View;
@@ -670,7 +670,7 @@ public class RNCWebViewManager extends SimpleViewManager<WebView> {
           case SslError.SSL_UNTRUSTED:
             description = "The certificate authority is not trusted";
             break;
-          default: 
+          default:
             description = "Unknown SSL Error";
             break;
         }
@@ -682,7 +682,7 @@ public class RNCWebViewManager extends SimpleViewManager<WebView> {
           failingUrl
         );
     }
-    
+
     @Override
     public void onReceivedError(
       WebView webView,
